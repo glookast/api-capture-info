@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               xmlns:base="http://base.commons.glookast.com"
+               xmlns:capt="http://capture-info.commons.glookast.com"
+               jaxb:extensionBindingPrefixes="xjc"
+               jaxb:version="2.1">
+    <jaxb:bindings scd="x-schema::base" xmlns:tns="http://base.commons.glookast.com">
+        <jaxb:schemaBindings map="false"/>
+        <jaxb:bindings scd="~base:Rational">
+            <jaxb:class ref="com.glookast.commons.base.Rational"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings scd="x-schema::capt" xmlns:tns="http://capture-info.commons.glookast.com">
+        <jaxb:schemaBindings map="false"/>
+        <jaxb:bindings scd="~capt:BufferFieldOrder">
+            <jaxb:class ref="com.glookast.commons.capture.info.AudioFormat"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~capt:PictureFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.PictureFormat"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~capt:PixelFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.PixelFormat"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~capt:SignalFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.SignalFormat"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~capt:SoundFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.SoundFormat"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~capt:TimecodeCollection">
+            <jaxb:class ref="com.glookast.commons.capture.info.TimecodeCollection"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~capt:TransferJob">
+            <jaxb:class ref="com.glookast.commons.capture.info.TransferJob"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~capt:TransferJobStatus">
+            <jaxb:class ref="com.glookast.commons.capture.info.TransferJobStatus"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+</jaxb:bindings>
