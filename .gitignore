@@ -1,3 +1,17 @@
 /build
 /.gradle
 /generated
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/libraries/Gradle__com_glookast_api_api_capture_info_schemas_1_2_0.xml
+/.idea/libraries/Gradle__com_glookast_commons_commons_base_1_2_0.xml
+/.idea/libraries/Gradle__com_glookast_commons_commons_capture_info_1_1_0.xml
+/.idea/libraries/Gradle__com_glookast_commons_commons_timecode_1_1_0.xml
+/.idea/libraries/Gradle__com_glookast_commons_commons_xml_1_0_0.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/modules/api-capture-info_main.iml
+/.idea/modules/api-capture-info_test.iml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/api-capture-info.iml
