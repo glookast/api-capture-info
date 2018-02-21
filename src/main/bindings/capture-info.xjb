@@ -17,7 +17,7 @@
         </jaxb:globalBindings>
     </jaxb:bindings>
     <jaxb:bindings scd="x-schema::base" xmlns:tns="http://base.commons.glookast.com">
-        <jaxb:schemaBindings map="false"/>
+        <jaxb:schemaBindings map="true"/>
         <jaxb:bindings scd="~base:PropertyList">
             <jaxb:class ref="com.glookast.commons.base.PropertyList"/>
         </jaxb:bindings>
@@ -25,10 +25,22 @@
             <jaxb:class ref="com.glookast.commons.base.Rational"/>
         </jaxb:bindings>
     </jaxb:bindings>
+    <jaxb:bindings scd="x-schema::time" xmlns:tns="http://timecode.commons.glookast.com">
+        <jaxb:schemaBindings map="true"/>
+        <jaxb:bindings scd="~time:TimecodeCollection">
+            <jaxb:class ref="com.glookast.commons.timecode.TimecodeCollection"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~time:TimecodePoint">
+            <jaxb:class ref="com.glookast.commons.timecode.TimecodePoint"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~time:TimecodeSource">
+            <jaxb:class ref="com.glookast.commons.timecode.TimecodeSource"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
     <jaxb:bindings scd="x-schema::capt" xmlns:tns="http://capture-info.commons.glookast.com">
         <jaxb:schemaBindings map="false"/>
         <jaxb:bindings scd="~capt:BufferFieldOrder">
-            <jaxb:class ref="com.glookast.commons.capture_info.AudioFormat"/>
+            <jaxb:class ref="com.glookast.commons.capture_info.BufferFieldOrder"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~capt:PictureFormat">
             <jaxb:class ref="com.glookast.commons.capture_info.PictureFormat"/>
@@ -42,17 +54,14 @@
         <jaxb:bindings scd="~capt:SoundFormat">
             <jaxb:class ref="com.glookast.commons.capture_info.SoundFormat"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:TimecodeCollection">
-            <jaxb:class ref="com.glookast.commons.capture_info.TimecodeCollection"/>
-        </jaxb:bindings>
         <jaxb:bindings scd="~capt:TransferJob">
             <jaxb:class ref="com.glookast.commons.capture_info.TransferJob"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~capt:TransferJobStatus">
             <jaxb:class ref="com.glookast.commons.capture_info.TransferJobStatus"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:SignalReferenceStatus">
-            <jaxb:class ref="com.glookast.commons.capture_info.SignalReferenceStatus"/>
+        <jaxb:bindings scd="~capt:ReferenceSignalStatus">
+            <jaxb:class ref="com.glookast.commons.capture_info.ReferenceSignalStatus"/>
         </jaxb:bindings>
     </jaxb:bindings>
 </jaxb:bindings>
