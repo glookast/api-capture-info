@@ -4,11 +4,11 @@
                xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
                xmlns:base="http://base.commons.glookast.com"
                xmlns:time="http://timecode.commons.glookast.com"
-               xmlns:capt="http://capture-info.commons.glookast.com"
+               xmlns:info="http://info.capture.commons.glookast.com"
                jaxb:extensionBindingPrefixes="xjc"
                jaxb:version="2.1">
 
-    <jaxb:bindings schemaLocation="../../../generated/main/resources/com/glookast/commons/capture-info/capture-info.xsd">
+    <jaxb:bindings schemaLocation="../../../generated/main/resources/com/glookast/commons/capture/info/info.xsd">
         <jaxb:globalBindings>
             <xjc:javaType name="java.util.UUID" xmlType="base:UUID" adapter="com.glookast.commons.xml.XmlAdapterUUID" />
             <xjc:javaType name="com.glookast.commons.timecode.Timecode" xmlType="time:Timecode" adapter="com.glookast.commons.timecode.XmlAdapterTimecode" />
@@ -37,31 +37,31 @@
             <jaxb:class ref="com.glookast.commons.timecode.TimecodeSource"/>
         </jaxb:bindings>
     </jaxb:bindings>
-    <jaxb:bindings scd="x-schema::capt" xmlns:tns="http://capture-info.commons.glookast.com">
+    <jaxb:bindings scd="x-schema::info" xmlns:tns="http://info.capture.commons.glookast.com">
         <jaxb:schemaBindings map="false"/>
-        <jaxb:bindings scd="~capt:BufferFieldOrder">
-            <jaxb:class ref="com.glookast.commons.capture_info.BufferFieldOrder"/>
+        <jaxb:bindings scd="~info:BufferFieldOrder">
+            <jaxb:class ref="com.glookast.commons.capture.info.BufferFieldOrder"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:PictureFormat">
-            <jaxb:class ref="com.glookast.commons.capture_info.PictureFormat"/>
+        <jaxb:bindings scd="~info:PictureFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.PictureFormat"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:PixelFormat">
-            <jaxb:class ref="com.glookast.commons.capture_info.PixelFormat"/>
+        <jaxb:bindings scd="~info:PixelFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.PixelFormat"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:SignalFormat">
-            <jaxb:class ref="com.glookast.commons.capture_info.SignalFormat"/>
+        <jaxb:bindings scd="~info:SignalFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.SignalFormat"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:SoundFormat">
-            <jaxb:class ref="com.glookast.commons.capture_info.SoundFormat"/>
+        <jaxb:bindings scd="~info:SoundFormat">
+            <jaxb:class ref="com.glookast.commons.capture.info.SoundFormat"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:TransferJob">
-            <jaxb:class ref="com.glookast.commons.capture_info.TransferJob"/>
+        <jaxb:bindings scd="~info:TransferJob">
+            <jaxb:class ref="com.glookast.commons.capture.info.TransferJob"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:TransferJobStatus">
-            <jaxb:class ref="com.glookast.commons.capture_info.TransferJobStatus"/>
+        <jaxb:bindings scd="~info:TransferJobStatus">
+            <jaxb:class ref="com.glookast.commons.capture.info.TransferJobStatus"/>
         </jaxb:bindings>
-        <jaxb:bindings scd="~capt:ReferenceSignalStatus">
-            <jaxb:class ref="com.glookast.commons.capture_info.ReferenceSignalStatus"/>
+        <jaxb:bindings scd="~info:ReferenceSignalStatus">
+            <jaxb:class ref="com.glookast.commons.capture.info.ReferenceSignalStatus"/>
         </jaxb:bindings>
     </jaxb:bindings>
 </jaxb:bindings>
