@@ -3,7 +3,7 @@ apply plugin: "maven"
 apply plugin: "signing"
 
 group = "com.glookast.api"
-version = "1.3.0"
+version = "1.3.1-SNAPSHOT"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -25,7 +25,7 @@ jar {
 repositories {
     mavenCentral()
     maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
+        url = "https://oss.sonatype.org/content/repositories/snapshots/"
     }
 }
 
@@ -39,9 +39,9 @@ dependencies {
     jaxws "org.jvnet.jaxb2_commons:jaxb2-value-constructor:3.0"
     schemas "com.glookast.api:api-capture-info-schemas:1.3.0"
     runtime "com.glookast.api:api-capture-info-schemas:1.3.0"
-    compile "com.glookast.commons:commons-capture-info:1.1.0"
+    compile "com.glookast.commons:commons-capture-info:1.1.1-SNAPSHOT"
+    compile "com.glookast.commons:commons-timecode:1.1.1-SNAPSHOT"
     compile "com.glookast.commons:commons-xml:1.0.0"
-    compile "com.glookast.commons:commons-timecode:1.1.0"
 }
 
 def generatedSrcDir = file("generated/main/java")
