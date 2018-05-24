@@ -42,6 +42,12 @@
         <jaxb:bindings scd="~info:BufferFieldOrder">
             <jaxb:class ref="com.glookast.commons.capture.info.BufferFieldOrder"/>
         </jaxb:bindings>
+        <jaxb:bindings scd="~info:Locator">
+            <jaxb:class ref="com.glookast.commons.capture.info.Locator"/>
+        </jaxb:bindings>
+        <jaxb:bindings scd="~info:LocatorColor">
+            <jaxb:class ref="com.glookast.commons.capture.info.LocatorColor"/>
+        </jaxb:bindings>
         <jaxb:bindings scd="~info:PictureFormat">
             <jaxb:class ref="com.glookast.commons.capture.info.PictureFormat"/>
         </jaxb:bindings>
