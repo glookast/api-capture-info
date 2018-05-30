@@ -34,25 +34,25 @@
             <jaxb:class ref="com.glookast.commons.timecode.TimecodeSequence"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~time:TimecodeSource">
-            <jaxb:class ref="com.glookast.commons.timecode.TimecodeSource"/>
+            <jaxb:typesafeEnumClass ref="com.glookast.commons.timecode.TimecodeSource"/>
         </jaxb:bindings>
     </jaxb:bindings>
     <jaxb:bindings scd="x-schema::info" xmlns:tns="http://info.capture.commons.glookast.com">
         <jaxb:schemaBindings map="false"/>
         <jaxb:bindings scd="~info:BufferFieldOrder">
-            <jaxb:class ref="com.glookast.commons.capture.info.BufferFieldOrder"/>
+            <jaxb:typesafeEnumClass ref="com.glookast.commons.capture.info.BufferFieldOrder"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~info:Locator">
             <jaxb:class ref="com.glookast.commons.capture.info.Locator"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~info:LocatorColor">
-            <jaxb:class ref="com.glookast.commons.capture.info.LocatorColor"/>
+            <jaxb:typesafeEnumClass ref="com.glookast.commons.capture.info.LocatorColor"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~info:PictureFormat">
             <jaxb:class ref="com.glookast.commons.capture.info.PictureFormat"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~info:PixelFormat">
-            <jaxb:class ref="com.glookast.commons.capture.info.PixelFormat"/>
+            <jaxb:typesafeEnumClass ref="com.glookast.commons.capture.info.PixelFormat"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~info:SignalFormat">
             <jaxb:class ref="com.glookast.commons.capture.info.SignalFormat"/>
@@ -64,10 +64,10 @@
             <jaxb:class ref="com.glookast.commons.capture.info.TransferJob"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~info:TransferJobStatus">
-            <jaxb:class ref="com.glookast.commons.capture.info.TransferJobStatus"/>
+            <jaxb:typesafeEnumClass ref="com.glookast.commons.capture.info.TransferJobStatus"/>
         </jaxb:bindings>
         <jaxb:bindings scd="~info:ReferenceSignalStatus">
-            <jaxb:class ref="com.glookast.commons.capture.info.ReferenceSignalStatus"/>
+            <jaxb:typesafeEnumClass ref="com.glookast.commons.capture.info.ReferenceSignalStatus"/>
         </jaxb:bindings>
     </jaxb:bindings>
 </jaxb:bindings>
